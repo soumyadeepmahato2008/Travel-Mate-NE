@@ -1,0 +1,19 @@
+{
+  "methods": [
+    "google",
+    "apple",
+    "x",
+    "email"
+  ],
+  "headline": "Welcome to TravelMateNE",
+  "subtitle": "Sign in or create an account to keep your North East journeys together.",
+  "style": {
+    "mode": "light",
+    "accentColor": "#315b46",
+    "backgroundColor": "#f3f6ef",
+    "panelColor": "#ffffff",
+    "textColor": "#26372f",
+    "fontFamily": "DM Sans, sans-serif",
+    "borderRadius": 12
+  }
+}

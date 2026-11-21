@@ -1,0 +1,96 @@
+[
+  {
+    "name": "Explore destinations and state profiles",
+    "sanity": true,
+    "viewport": "desktop",
+    "covers": [
+      "eight state explorer",
+      "destination search and filters",
+      "destination detail content",
+      "shopping guide and separate shopping list"
+    ],
+    "description": "Checks the existing North East discovery experience after the redesign.",
+    "steps": [
+      "Search for Kaziranga",
+      "Open its destination details",
+      "Review highlights and shopping items",
+      "Switch to Meghalaya in States"
+    ],
+    "expected": "Search, destination details, shopping actions and state profiles remain usable."
+  },
+  {
+    "name": "Explore the interactive North East map",
+    "viewport": "desktop",
+    "covers": [
+      "AI planner removal",
+      "interactive OpenStreetMap view",
+      "all 21 destination markers",
+      "destination marker detail selection",
+      "map destination index"
+    ],
+    "description": "Verifies the replacement map loads, displays destination markers and opens the selected destination guide.",
+    "steps": [
+      "Open Explore Map from the main navigation",
+      "Confirm the North East map and destination index are visible",
+      "Select the Tawang Monastery marker",
+      "Open the Tawang Monastery destination details",
+      "Choose a Meghalaya destination from the destination index"
+    ],
+    "expected": "The map displays the listed destinations, marker selection opens the correct destination details and the destination index can focus places on the map."
+  },
+  {
+    "name": "Submit a travel enquiry",
+    "viewport": "desktop",
+    "covers": [
+      "tour and stay enquiry workflow",
+      "server-side enquiry persistence",
+      "required field validation"
+    ],
+    "description": "Checks that a visitor can submit a travel enquiry and incomplete details are rejected.",
+    "steps": [
+      "Open Dashboard",
+      "Enter name, valid email and destination in Tour & stay enquiry",
+      "Submit the request",
+      "Try again with an invalid email"
+    ],
+    "expected": "A valid request receives a reference ID and invalid details are rejected."
+  },
+  {
+    "name": "Account, saved trips and protected expense API",
+    "viewport": "desktop",
+    "covers": [
+      "account sign-in",
+      "user-scoped cloud trip storage",
+      "group expense record validation",
+      "protected admin role boundary"
+    ],
+    "description": "Checks account access, existing saved-trip records and protected server endpoints without relying on the removed AI planner.",
+    "steps": [
+      "Sign in as a regular traveller",
+      "Open Dashboard and review any previously saved cloud trips",
+      "Open My trip and create a local trip plan",
+      "Submit a valid group expense",
+      "Try to access the admin overview"
+    ],
+    "expected": "The account remains accessible, local trip planning works, expense validation is available and a regular traveller cannot access admin data."
+  },
+  {
+    "name": "Responsive dashboard and travel guide",
+    "viewport": "mobile",
+    "covers": [
+      "mobile navigation",
+      "dashboard layout",
+      "trip planning",
+      "festival calendar",
+      "travel guide readability"
+    ],
+    "description": "Checks the redesigned navigation and planning screens on a mobile viewport.",
+    "steps": [
+      "Open the app on mobile",
+      "Navigate to Dashboard",
+      "Open My trip and adjust trip duration",
+      "Open Festivals and Travel guide"
+    ],
+    "expected": "Navigation works, panels stack cleanly and content fits the narrow viewport."
+  }
+]
